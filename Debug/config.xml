@@ -1,0 +1,236 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CenterView>
+  <Username name="user">cvuser1</Username>
+  <Password>
+  </Password>
+  <state>false</state>
+  <logintoken Name="token">
+  </logintoken>
+  <scan_time>2018/2/2 0:00:00</scan_time>
+  <ServerUrl>http://192.168.1.21:8090/</ServerUrl>
+  <MaxiNoticeId Name="NoticeId">47</MaxiNoticeId>
+  <NoticeCheckTime Name="CheckTime">60000</NoticeCheckTime>
+  <!---3*60000(3分钟)-->
+  <!--vprotype 1.系统优化 2.使用体验优化 3.网络优化 4.启动优化-->
+  <!--type register 代表注册表 service 代表服务-->
+  <renss>
+    <total value="23" />
+    <r0>
+      <vtype value="register" />
+      <vprotype value="4" />
+      <patch value="HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced" />
+      <proName value="Disable all Visual Effects except 'Use common tasks in folders' and 'Use visual styles on windows and buttons'" />
+      <vNum value="4" />
+      <vName0 value="ListviewAlphaSelect" />
+      <vValue0 value="dword:00000000" />
+      <vName1 value="TaskbarAnimations" />
+      <vValue1 value="dword:00000000" />
+      <vName2 value="ListviewWatermark" />
+      <vValue2 value="dword:00000000" />
+      <vName3 value="ListviewShadow" />
+      <vValue3 value="dword:00000000" />
+    </r0>
+    <r1>
+      <vtype value="register" />
+      <vprotype value="2" />
+      <patch value="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\FileSystem" />
+      <proName value=" Disable Last Access Timestamp" />
+      <vNum value="1" />
+      <vName0 value="NtfsDisableLastAccessUpdate" />
+      <vValue0 value="dword:00000001" />
+    </r1>
+    <r2>
+      <vtype value="register" />
+      <vprotype value="2" />
+      <patch value="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\CiSvc" />
+      <proName value="Memory monitoring" />
+      <vNum value="1" />
+      <vName0 value="Start" />
+      <vValue0 value="dword:00000004" />
+    </r2>
+    <r3>
+      <vtype value="register" />
+      <vprotype value="3" />
+      <patch value="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\wscsvc" />
+      <proName value="Windows Security Center" />
+      <vNum value="1" />
+      <vName0 value="Start" />
+      <vValue0 value="dword:00000004" />
+    </r3>
+    <r4>
+      <vtype value="register" />
+      <vprotype value="3" />
+      <patch value="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\BNNS\Parameters" />
+      <proName value="PVS High Availability Failover" />
+      <vNum value="1" />
+      <vName0 value="EnableOffload" />
+      <vValue0 value="dword:00000000" />
+    </r4>
+    <r5>
+      <vtype value="register" />
+      <vprotype value="3" />
+      <patch value="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Tcpip\Parameters" />
+      <proName value="Disable TCP/IP Offload" />
+      <vNum value="1" />
+      <vName0 value="DisableTaskOffload" />
+      <vValue0 value="dword:00000001" />
+    </r5>
+    <r6>
+      <vtype value="register" />
+      <vprotype value="4" />
+      <patch value="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control" />
+      <proName value="Increase ServiceStartup Timeout" />
+      <vNum value="1" />
+      <vName0 value="ServicesPipeTimeout" />
+      <vValue0 value="dword:0002bf20" />
+    </r6>
+    <r7>
+      <vtype value="register" />
+      <vprotype value="4" />
+      <patch value="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Applets\Tour" />
+      <proName value="Windows tour" />
+      <vNum value="1" />
+      <vName0 value="RunCount" />
+      <vValue0 value="dword:00000000" />
+    </r7>
+    <r8>
+      <vtype value="register" />
+      <vprotype value="1" />
+      <patch value="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Windows" />
+      <proName value="Hide Hard Error Messages" />
+      <vNum value="1" />
+      <vName0 value="ErrorMode" />
+      <vValue0 value="dword:00000002" />
+    </r8>
+    <r9>
+      <vtype value="register" />
+      <vprotype value="3" />
+      <patch value="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\Explorer" />
+      <proName value="Windows Explorer File Tree" />
+      <vNum value="1" />
+      <vName0 value="NoRemoteRecursiveEvents" />
+      <vValue0 value="dword:00000001" />
+    </r9>
+    <r10>
+      <vtype value="register" />
+      <vprotype value="4" />
+      <patch value="HKEY_USERS\.DEFAULT\Control Panel\Desktop" />
+      <proName value="Desktop Screen Save" />
+      <vNum value="1" />
+      <vName0 value="ScreenSaveActive" />
+      <vValue0 value="0" />
+    </r10>
+    <r11>
+      <vtype value="register" />
+      <vprotype value="3" />
+      <patch value="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\NetCache" />
+      <proName value="Offline Files" />
+      <vNum value="1" />
+      <vName0 value="Enabled" />
+      <vValue0 value="dword:00000000" />
+    </r11>
+    <r12>
+      <vtype value="register" />
+      <vprotype value="1" />
+      <patch value="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Dfrg\BootOptimizeFunction" />
+      <proName value="Disable Background Defragmentation" />
+      <vNum value="1" />
+      <vName0 value="Enable" />
+      <vValue0 value="N" />
+    </r12>
+    <r13>
+      <vtype value="register" />
+      <vprotype value="1" />
+      <patch value="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\OptimalLayout" />
+      <proName value="Disable Background Layout Service" />
+      <vNum value="1" />
+      <vName0 value="EnableAutoLayout" />
+      <vValue0 value="dword:00000000" />
+    </r13>
+    <r14>
+      <vtype value="register" />
+      <vprotype value="4" />
+      <patch value="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\Power" />
+      <proName value="Watch dog of power" />
+      <vNum value="1" />
+      <vName0 value="Heuristics" />
+      <vValue0 value="hex:05,00,00,00,00,01,00,00,00,00,00,00,00,00,00,00,3f,42,0f,00" />
+    </r14>
+    <r15>
+      <vtype value="register" />
+      <vprotype value="3" />
+      <patch value="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Netlogon\Parameters" />
+      <proName value="Network logon" />
+      <vNum value="1" />
+      <vName0 value="DisablePasswordChange" />
+      <vValue0 value="dword:00000001" />
+    </r15>
+    <r16>
+      <vtype value="register" />
+      <vprotype value="1" />
+      <patch value="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control" />
+      <proName value="Increase Service Startup Timeout" />
+      <vNum value="1" />
+      <vName0 value="ServicesPipeTimeout" />
+      <vValue0 value="dword:0002bf20" />
+    </r16>
+    <r17>
+      <vtype value="register" />
+      <vprotype value="2" />
+      <patch value="HKEY_CURRENT_USER\Software\Microsoft\Internet Explorer\Main" />
+      <proName value="Force Offscreen Composition for Internet Explorer" />
+      <vNum value="1" />
+      <vName0 value="Force Offscreen Composition" />
+      <vValue0 value="dword:00000001" />
+    </r17>
+    <r18>
+      <vtype value="register" />
+      <vprotype value="4" />
+      <patch value="HKEY_CURRENT_USER\Control Panel\Desktop" />
+      <proName value="Reduce Menu Show Delay" />
+      <vNum value="1" />
+      <vName0 value="MenuShowDelay" />
+      <vValue0 value="150" />
+    </r18>
+    <r19>
+      <vtype value="register" />
+      <vprotype value="4" />
+      <patch value="HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\VisualEffects" />
+      <proName value="Windows Visual Effects" />
+      <vNum value="1" />
+      <vName0 value="VisualFXSetting" />
+      <vValue0 value="dword:00000003" />
+    </r19>
+    <r20>
+      <vtype value="register" />
+      <vprotype value="4" />
+      <patch value="HKEY_CURRENT_USER\Control Panel\Desktop\WindowMetrics" />
+      <proName value="Disable all Visual Effects except 'Use common tasks in folders' and ' Use visual styles on windows and buttons ' " />
+      <vNum value="1" />
+      <vName0 value="MinAnimate" />
+      <vValue0 value="0" />
+    </r20>
+    <r21>
+      <vtype value="register" />
+      <vprotype value="4" />
+      <patch value="HKEY_USERS\.DEFAULT\Control Panel\Desktop" />
+      <proName value="Disable LogonScreensaver " />
+      <vNum value="1" />
+      <vName0 value="ScreenSaveActive" />
+      <vValue0 value="0" />
+    </r21>
+    <r22>
+      <vtype value="register" />
+      <vprotype value="4" />
+      <patch value="HKEY_CURRENT_USER\Control Panel\Desktop" />
+      <proName value="Disable all Visual Effects except 'Use common tasks in folders' and 'Use visual styles on windows and buttons'" />
+      <vNum value="3" />
+      <vName0 value="DragFullWindows" />
+      <vValue0 value="0" />
+      <vName1 value="FontSmoothing" />
+      <vValue1 value="0" />
+      <vName2 value="UserPreferencesMask" />
+      <vValue2 value="hex:90,12,01,80,10,00,00,00" />
+    </r22>
+  </renss>
+</CenterView>
